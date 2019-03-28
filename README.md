@@ -20,6 +20,16 @@ This should get the API running on port 3000.  You can use Postman or your brows
 - GET http://localhost:3000/workorders/[#]
 - POST http://localhost:3000/workorders/
 
+Example body:
+
+{ coffee_id: 2,
+  method_id: 3,
+  number_of_cases: 5,
+  packets_per_case: 50,
+  notes: '',
+  ship_date: '2019-03-21',
+  priority: false }
+
 There are no environment variables setup for db connection settings. You can find these hardcoded in:
 /src/db/queries.js and adjust as needed.
 

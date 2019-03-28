@@ -28,7 +28,7 @@ const getWorkOrderById = (request, response) => {
               inner join method m on wo.method_id = m.id
               inner join coffee c on wo.coffee_id = c.id
               where wo.id = $1`
-  console.log(id);
+              
   pool.query(sql, [id], (error, results) => {
     if (error) {
       throw error
@@ -51,7 +51,6 @@ const createWorkOrder = (request, response) => {
      response.status(201).send(`Workorder added`)
    })
 }
-
 
 
 module.exports = {
