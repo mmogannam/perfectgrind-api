@@ -10,15 +10,15 @@ npm install
 
 Run using the following commands:
 
-npm start
-npm dev
-npm test
+- npm start
+- npm dev
+- npm test
 
 This should get the API running on port 3000.  You can use Postman or your browser to make requests to:
 
-GET http://localhost:3000/workorders/
-GET http://localhost:3000/workorders/[#]
-POST http://localhost:3000/workorders/
+- GET http://localhost:3000/workorders/
+- GET http://localhost:3000/workorders/[#]
+- POST http://localhost:3000/workorders/
 
 There are no environment variables setup for db connection settings. You can find these hardcoded in:
 /src/db/queries.js and adjust as needed.
